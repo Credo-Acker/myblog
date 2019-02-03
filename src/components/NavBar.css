@@ -1,0 +1,124 @@
+.NavBar {
+  position: fixed;
+  background: #222222;
+  width: 300px;
+  height: 100%;
+  right: -300px;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.realNavBar {
+  position: fixed;
+  background: #222222;
+  width: 300px;
+  height: 100%;
+  right: 0px;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.NavBarin {
+  animation: navbarin 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.NavBarout {
+  animation: navbarout 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navbarin {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes navbarout {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.navUl {
+  position: relative;
+  top: 10vh;
+  width: 200px;
+  display: inline-block;
+  color: #cccccc;
+  padding: 0;
+  margin: 0;
+}
+
+.navLi {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 0;
+  letter-spacing: 2px;
+}
+
+.navLi span {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  padding-bottom: 2px;
+  transition: all 0.5s;
+  border-bottom: 1px solid #cccccc;
+}
+
+.innerUl {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+}
+
+.innerLi {
+  border-bottom: 1px solid #cccccc;
+  list-style: none;
+  margin-left: 0;
+  width: 100px;
+  position: relative;
+  left: 1.5%;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-bottom: 2px;
+  transition: all 0.5s;
+}
+
+.innerLi:hover {
+  font-size: 18px;
+  transition: all 0.5s;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.navLi span: {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+li {
+  list-style: none;
+}
+
+.a {
+  color: #cccccc;
+}

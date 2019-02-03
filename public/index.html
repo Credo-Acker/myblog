@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="https://blog.credog.top/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"/>
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <title>瑾影小轩</title>
+        <style>
+        .FirstScreen {
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          background: #222222;
+          animation: timeout 4s;
+          animation-fill-mode: forwards;
+          z-index: 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @keyframes timeout {
+          0% {
+          }
+          50% {
+          }
+          100% {
+            display: none;
+            z-index: 0;
+          }
+        }
+
+        .circle  {
+          position: relative;
+          display: block;
+          height: 12vw;
+          width: 12vw;
+          border-radius: 20vw;
+          box-shadow: #ffffff 0 0 2vw;
+          animation: circleto 4s infinite;
+          background: url(%PUBLIC_URL%/headimg.jpg);
+          background-size: 100% 100%;
+        }
+
+        @keyframes circleto {
+          50% {
+            transform: scale(1.2, 1.2) rotate(360deg);
+            box-shadow: #ffffff 0 0 6vw;
+          }
+          100% {
+            transform: scale(1, 1);
+            box-shadow: #ffffff 0 0 2vw;
+          }
+        }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+          <div class="FirstScreen">
+            <div class="circle">
+
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

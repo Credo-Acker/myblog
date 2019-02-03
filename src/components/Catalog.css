@@ -1,0 +1,130 @@
+.Catalog {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  width: calc(100% - 300px);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url('../imgs/20190129135143.png') no-repeat; */
+  /* background-color: #afb5a7; */
+  background: linear-gradient(#617ea1, #8ea8ab, #bab19d);
+}
+
+.headimg {
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 5%;
+  width: 5vw;
+  height: 5vw;
+  background: url(../imgs/headimg.jpg);
+  background-size: 100% 100%;
+  border-radius: 10vw;
+  box-shadow: #ffffff 0 0 20px;
+}
+
+.titilname {
+  position: relative;
+  font-size: 45px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-shadow: #666 1px 1px 5px;
+  line-height: 50px;
+  color: #333333;
+}
+
+.catalogList {
+  position: relative;
+  width: calc(100% - 300px);
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listLink {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.listItem {
+  position: relative;
+  width: 570px;
+  height: 180px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(#f9f7f7, #dbe2ef, #fae3d9);
+  box-shadow: #dddddd 3px 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.itemImg {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 215px;
+  height: 145px;
+  border-radius: 10px;
+}
+
+.itemName {
+  position: relative;
+  left: 215px;
+  width: 350px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #363636;
+}
+
+.itemDigest {
+  position: absolute;
+  text-align: left;
+  left: 240px;
+  top: 50px;
+  text-indent: 1em;
+  height: 110px;
+  width: 340px;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.itemTag {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  font-size: 12px;
+  color: #aaaaaa;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.itemTime {
+  position: absolute;
+  top: 165px;
+  right: 20px;
+  font-size: 12px;
+  color: #666666;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.listItem:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: #aaaaaa 3px 5px 15px;
+  transition: all 0.3s;
+}

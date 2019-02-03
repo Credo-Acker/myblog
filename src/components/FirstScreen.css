@@ -1,0 +1,48 @@
+.FirstScreen {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #222222;
+  animation: timeout 3s;
+  animation-fill-mode: forwards;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes timeout {
+  0% {
+
+  }
+  50% {
+  }
+  100% {
+    display: none;
+    z-index: 0;
+  }
+}
+
+.circle  {
+  position: relative;
+  height: 12vw;
+  width: 12vw;
+  border-radius: 20vw;
+  box-shadow: #ffffff 0 0 2vw;
+  animation: circleto 3s;
+  animation-fill-mode: forwards;
+  background: url(../imgs/headimg.jpg);
+  background-size: 100% 100%;
+}
+
+@keyframes circleto {
+  50% {
+    transform: scale(1.2, 1.2) rotate(360deg);
+    box-shadow: #ffffff 0 0 6vw;
+  }
+  100% {
+    transform: scale(1, 1);
+    box-shadow: #ffffff 0 0 2vw;
+    display: none;
+  }
+}

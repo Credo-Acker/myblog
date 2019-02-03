@@ -1,0 +1,86 @@
+.Main {
+  position: relative;
+  width: 100%;
+  /* background: linear-gradient(#f7fbfc, #d6e6f2); */
+  padding-top: 30px;
+}
+
+.MainLeft {
+  width: calc(100% - 300px);
+}
+
+.artcleList {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  width: auto;
+  text-align: center;
+}
+
+.listLink {
+  display: inline-block;
+  position: relative;
+}
+
+.listLi {
+  display: inline-block;
+  width: 230px;
+  height: 320px;
+  padding: 15px;
+  float: left;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(#f9f7f7, #dbe2ef, #bbded6);
+  box-shadow: #dddddd 3px 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.tagimg {
+  width: 200px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.articleName {
+  font-size: 17px;
+  line-height: 26px;
+  color: #363636;
+  margin: 0;
+}
+
+.digest {
+  text-align: left;
+  text-indent: 1em;
+  line-height: 22px;
+  height: 90px;
+  width: 230px;
+  margin: 5px 0 0 0;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.tag {
+  font-size: 12px;
+  color: #aaaaaa;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.createTime {
+  font-size: 12px;
+  color: #666666;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.listLi:hover {
+  transform: scale(1.05, 1.05);
+  transition: all 0.3s;
+}

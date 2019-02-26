@@ -27,12 +27,10 @@ class NavBar extends Component {
               <ul className="innerUl">
                 <li className="innerLi">洞箫声起</li>
                 <li className="innerLi">气蒸云梦</li>
-                <li className="innerLi">还没想好</li>
-                <li className="innerLi">还没想好</li>
-                <li className="innerLi">还没想好</li>
-                <li className="innerLi">还没想好</li>
-                <li className="innerLi">还没想好</li>
-                <li className="innerLi">还没想好</li>
+                <li className="innerLi">东都惊变</li>
+                <li className="innerLi">洞箫声起</li>
+                <li className="innerLi">气蒸云梦</li>
+                <li className="innerLi">东都惊变</li>
               </ul>
             </li>
           </ul>

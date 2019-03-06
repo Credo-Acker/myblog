@@ -3,4 +3,4 @@
 2. ```npm start```
 3. ```npm run build```
 
-### 项目地址：https://blog.credog.top 
+### 项目地址：https://blog.credog.top/
